@@ -1,0 +1,85 @@
+body{
+    font-family: 'Arial', 'Arial Nova';
+    color: whitesmoke;
+    box-sizing: border-box;
+    margin: 20;
+    padding: 0;
+    background-image: url('../images/background.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    color: white;
+    width: 100%;
+    display: inline-block;
+    padding: 2px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.subtitle {
+    color:whitesmoke;
+    text-align: left;
+    margin-left: 10%;
+    word-spacing: 100px;
+}
+
+.videogames {
+    margin-left: 10%;
+}
+
+li {
+    font-family: tahoma;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 222, 199);
+}
+
+.videogames {
+    display: flex;
+    height: 100vh;
+}
+.table-section {
+    width: 70%;
+
+} .form-section {
+    width: 30%;
+}
+
+table,
+th,
+td {
+    border: 1px solid whitesmoke;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 8px 12px 10px;
+    font-size: 16px;
+    transition: 0.2s;
+    text-align: start;
+}
+
+table{
+    background-color: #0045674d;
+    width: 70%;
+}
+
+tr:nth-child(odd){
+    background-color: #0045674d;
+}
+
+th:nth-child(1){
+    width: 80%;
+}
+
+tr:hover {
+    background: #0045679c;
+}

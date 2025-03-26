@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="static/css/styles.css">
+
+        <title> Breeze </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="title">
+                <h1><img src="static/images/breeze-logo.svg" width="40px" height="40px"> Breeze </h1>
+            </div>
+        </header>
+        
+        
+        <div class="subtitle"> <u><span style="color:aqua">BIBLIOTECA</span></u> COMUNIDADE SUPORTE </div>
+
+        <br>
+        <br>
+        <br>
+
+        <section class="videogames">
+            
+            <!-- Seção da tabela -->
+            <div class="table-section">
+                <table id="library">
+                    <tr>
+                        <th>TÍTULO</th>
+                        <th>DESENVOLVEDOR</th>
+                        <th>CATEGORIA</th>
+                        <th>PREÇO</th>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Table Section -->
+            <div class="form-section">
+                <input type="text" id="newTitle" placeholder="Novo videogame a cadastrar:">
+                <input type="text" id="newDeveloper" placeholder="Desenvolvedor:">
+                <input type="text" id="newCategory" placeholder="Categoria:">
+                <input type="text" id="newPrice" placeholder="Preço:">
+                <button onclick="newItem()" class="addBtn">Adicionar</button>
+            </div>
+        </section>
+
+    </body>
+
+</html>
