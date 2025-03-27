@@ -27,7 +27,12 @@ header {
 .subtitle {
     color:whitesmoke;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 5%;
+}
+
+.mock-menu {
+    color:whitesmoke;
+    text-align: left;
     word-spacing: 100px;
 }
 
@@ -43,15 +48,29 @@ li {
     background-color: rgb(225, 222, 199);
 }
 
-.videogames {
+.fullscreen {
     display: flex;
     height: 100vh;
 }
-.table-section {
-    width: 70%;
 
-} .form-section {
+.main-screen {
+    width: 70%;
+    margin-left: 5%;
+} 
+
+.side-screen {
     width: 30%;
+    border-left: 2px solid whitesmoke;
+    margin-left: 5%;
+}
+
+.form-section {
+    margin-left: 5%;
+    font-family: 'Segoe UI';
+}
+
+.addBtn {
+    font-family: 'Segoe UI';
 }
 
 table,

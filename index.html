@@ -17,37 +17,51 @@
             </div>
         </header>
         
+        <section class="fullscreen">
+
+            <!-- Painel principal -->
+            <div class="main-screen">
+                
+                <div class="mock-menu"> <u><span style="color:aqua">BIBLIOTECA</span></u> COMUNIDADE SUPORTE </div>
+                <br>
+                <br>
+                <!-- Seção da tabela -->
+                <div class="table-section">
+                    <table id="library">
+                        <tr>
+                            <th>TÍTULO</th>
+                            <th>DESENVOLVEDOR</th>
+                            <th>CATEGORIA</th>
+                            <th>PREÇO</th>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+
+            <!-- Painel lateral -->
+            <div class="side-screen">
+                
+                <div class="subtitle"> PAINEL DE CONTROLE </div>
+                <br>
+                <p style="margin-left: 5%;">Cadastro de novos itens:</p>
+                <br>
+                <!-- Formulário de cadastro de novos videogames -->
+                <div class="form-section">
+                    <input type="text" id="newTitle" placeholder="Videogame:">
+                    <input type="text" id="newDeveloper" placeholder="Desenvolvedor:">
+                    <input type="text" id="newCategory" placeholder="Categoria:">
+                    <input type="text" id="newPrice" placeholder="Preço:">
+                    <br>
+                    <br>
+                    <button onclick="newItem()" class="addBtn" style="align-self: center;">Adicionar +</button>
+                </div>
+            
+            </div>
         
-        <div class="subtitle"> <u><span style="color:aqua">BIBLIOTECA</span></u> COMUNIDADE SUPORTE </div>
-
-        <br>
-        <br>
-        <br>
-
-        <section class="videogames">
-            
-            <!-- Seção da tabela -->
-            <div class="table-section">
-                <table id="library">
-                    <tr>
-                        <th>TÍTULO</th>
-                        <th>DESENVOLVEDOR</th>
-                        <th>CATEGORIA</th>
-                        <th>PREÇO</th>
-                    </tr>
-                </table>
-            </div>
-            
-            <!-- Table Section -->
-            <div class="form-section">
-                <input type="text" id="newTitle" placeholder="Novo videogame a cadastrar:">
-                <input type="text" id="newDeveloper" placeholder="Desenvolvedor:">
-                <input type="text" id="newCategory" placeholder="Categoria:">
-                <input type="text" id="newPrice" placeholder="Preço:">
-                <button onclick="newItem()" class="addBtn">Adicionar</button>
-            </div>
         </section>
 
+        <script src="scripts.js"></script>
     </body>
 
 </html>
