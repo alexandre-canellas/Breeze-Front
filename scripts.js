@@ -1,6 +1,6 @@
 /*
   --------------------------------------------------------------------------------------
-  Função para obter a lista existente do servidor via requisição GET
+  Função para obter a biblioteca de videogames existentes do servidor via requisição GET
   --------------------------------------------------------------------------------------
 */
 const getList = async () => {
@@ -27,7 +27,7 @@ const getList = async () => {
   
   /*
     --------------------------------------------------------------------------------------
-    Função para colocar um item na lista do servidor via requisição POST
+    Função para colocar um item na biblioteca do servidor via requisição POST
     --------------------------------------------------------------------------------------
   */
   const postItem = async (inputTitle, inputDeveloper, inputCategory, inputPrice) => {
@@ -51,7 +51,7 @@ const getList = async () => {
   
   /*
     --------------------------------------------------------------------------------------
-    Função para criar um botão close para cada item da lista
+    Função para criar um botão de exclusão para cada item da biblioteca
     --------------------------------------------------------------------------------------
   */
   const insertButton = (parent) => {
@@ -65,7 +65,7 @@ const getList = async () => {
   
   /*
     --------------------------------------------------------------------------------------
-    Função para remover um item da lista de acordo com o click no botão close
+    Remove um item da biblioteca de acordo com o click no botão 'excluir'
     --------------------------------------------------------------------------------------
   */
   const removeElement = () => {
@@ -86,11 +86,12 @@ const getList = async () => {
   
   /*
     --------------------------------------------------------------------------------------
-    Função para deletar um item da lista do servidor via requisição DELETE
+    Deleta um item da biblioteca do servidor via requisição DELETE
     --------------------------------------------------------------------------------------
   */
   const deleteItem = (item) => {
     console.log(item)
+    /* Encoding previne problemas com títulos contendo espaço em branco ex: 'Super Mario'*/
     let url = 'http://127.0.0.1:5000/videogame_delete?title=' + encodeURIComponent(item);
     fetch(url, {
       method: 'delete'
@@ -103,7 +104,7 @@ const getList = async () => {
   
   /*
     --------------------------------------------------------------------------------------
-    Função para adicionar um novo item com nome, quantidade e valor 
+    Função para adicionar um novo item com título, desenvolvedor, categoria e preço 
     --------------------------------------------------------------------------------------
   */
   const newItem = () => {
@@ -129,7 +130,7 @@ const getList = async () => {
   
   /*
     --------------------------------------------------------------------------------------
-    Função para inserir items na lista apresentada
+    Função para inserir items na tabela apresentada
     --------------------------------------------------------------------------------------
   */
   const insertList = (title, developer, category, price) => {
